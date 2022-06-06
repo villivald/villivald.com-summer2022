@@ -1,0 +1,20 @@
+.blog {
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(201, 70, 70);
+}
+
+.blogPosts {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.blogPost {
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+}

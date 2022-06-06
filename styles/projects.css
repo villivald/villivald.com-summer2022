@@ -1,0 +1,25 @@
+.projects {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 3fr;
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(99, 86, 154);
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.projectSection {
+  display: grid;
+  gap: 1rem;
+  width: 300px;
+  height: 200px;
+}
+
+.projectSection div {
+  border: 1px solid black;
+}

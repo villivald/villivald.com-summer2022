@@ -1,0 +1,8 @@
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  background-color: rgb(163, 68, 116);
+}
