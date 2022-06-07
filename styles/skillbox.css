@@ -9,7 +9,29 @@
 
 .studyContainer,
 .skillsContainer {
-  border: 1px solid black;
   width: 500px;
   height: 200px;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.studyContainer {
+  display: grid;
+  gap: 10px;
+}
+
+.studyContainer > div {
+  width: 500px;
+  height: 90px;
+  border: 1px solid black;
+}
+
+.skill {
+  border: 1px solid black;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
 }

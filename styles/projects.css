@@ -4,7 +4,13 @@
   grid-template-columns: 2fr 3fr;
   height: 40vh;
   width: 100vw;
-  background-color: rgb(99, 86, 154);
+  background-color: hsl(151, 21%, 85%);
+}
+
+.currentProjects {
+  background-color: #397f8c;
+  width: 400px;
+  height: 225px;
 }
 
 .projectsContainer {
@@ -17,9 +23,27 @@
   display: grid;
   gap: 1rem;
   width: 300px;
-  height: 200px;
+  height: 225px;
 }
 
 .projectSection div {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectSection div div {
+  width: 50%;
+}
+
+.projectSection div div:first-child {
+  background-color: aqua;
+}
+
+.projectSection div div:nth-child(2) {
+  background-color: rgb(51, 255, 0);
+}
+
+.projectsContainer > div > div:nth-child(2),
+.projectsContainer > div > div:nth-child(2) {
   border: 1px solid black;
 }

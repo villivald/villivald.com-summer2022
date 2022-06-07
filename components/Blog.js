@@ -7,9 +7,7 @@ const Blog = () => {
       <h3>Blog posts</h3>
       <div className="blogPosts">
         {blogPosts.map((post) => (
-          <div key={post} className="blogPost">
-            {post}
-          </div>
+          <div key={post} className="blogPost"></div>
         ))}
       </div>
     </div>

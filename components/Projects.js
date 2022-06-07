@@ -3,15 +3,21 @@ import React from "react";
 const Projects = () => {
   return (
     <div className="projects">
-      <div>Current projects</div>
+      <div className="currentProjects"></div>
       <div className="projectsContainer">
         <div className="projectSection">
-          <div>Buttons</div>
-          <div>Git</div>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+          <div></div>
         </div>
         <div className="projectSection">
-          <div>Buttons</div>
-          <div>Git</div>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+          <div></div>
         </div>
       </div>
     </div>

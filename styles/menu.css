@@ -4,7 +4,7 @@
   grid-template-columns: repeat(7, 1fr);
   height: 15vh;
   width: 100vw;
-  background-color: rgb(69, 167, 130);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .menuButton {
