@@ -1,9 +1,9 @@
 .blog {
   display: grid;
   place-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
-  background-color: hsl(0, 55%, 53%);
+  background-color: hsl(0, 8%, 77%);
 }
 
 .blogPosts {
@@ -14,7 +14,7 @@
 }
 
 .blogPost {
-  background-color: hsl(0, 0%, 100%);
-  width: 300px;
-  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
