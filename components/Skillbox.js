@@ -1,5 +1,6 @@
 import React from "react";
-import SingleSkill from "./SingleSkill";
+import SingleSkill from "./subComponents/SingleSkill";
+import PercentBar from "./subComponents/PercentBar";
 
 const Skillbox = () => {
   const skills = [
@@ -21,8 +22,13 @@ const Skillbox = () => {
       <div>
         <h3>Study</h3>
         <div className="studyContainer">
-          <div></div>
-          <div></div>
+          <div>
+            Bachelor of Engineering, Software engineering (2019 ~ 2023) -
+            190/240 ECTS
+          </div>
+          <PercentBar percent={79} />
+          <div>Master of Arts, Russian literature (2011 - 2015) - 300 ECTS</div>
+          <PercentBar percent={100} />
         </div>
       </div>
       <div>

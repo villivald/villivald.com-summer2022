@@ -1,5 +1,5 @@
 import React from "react";
-import SingleBlog from "./SingleBlog";
+import SingleBlog from "./subComponents/singleBlog";
 
 const Blogs = ({ blogData }) => {
   return (
