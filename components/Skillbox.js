@@ -1,19 +1,20 @@
 import React from "react";
+import SingleSkill from "./SingleSkill";
 
 const Skillbox = () => {
   const skills = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "next",
+    "mongo",
+    "linux",
+    "git",
+    "github",
+    "terminal",
+    "redux",
+    "docker",
   ];
   return (
     <div className="skillbox">
@@ -28,7 +29,7 @@ const Skillbox = () => {
         <h3>Skills</h3>
         <div className="skillsContainer">
           {skills.map((skill) => (
-            <div className="skill" key={skill}></div>
+            <SingleSkill key={skill} skill={skill} />
           ))}
         </div>
       </div>

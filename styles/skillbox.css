@@ -18,6 +18,11 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.skillsContainer > span {
+  width: 50px !important;
+  height: 50px !important;
+}
+
 .studyContainer {
   display: grid;
   gap: 10px;
@@ -27,11 +32,4 @@
   width: 500px;
   height: 90px;
   border: 1px solid black;
-}
-
-.skill {
-  border: 1px solid black;
-  width: 55px;
-  height: 55px;
-  border-radius: 15px;
 }
