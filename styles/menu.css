@@ -10,7 +10,9 @@
 .menuButton {
   width: 150px;
   height: 50px;
+  cursor: pointer;
 }
+
 .menuButton::first-letter {
   text-transform: uppercase;
 }
