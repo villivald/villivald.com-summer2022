@@ -1,18 +1,17 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 const Menu = () => {
-  const menuButtons = [
-    "projects",
-    "uses",
-    "books",
-    "courses",
-    "about",
-    "contact",
-  ];
+  const router = useRouter();
+  const menuButtons = ["projects", "uses", "books", "studies", "about"];
   return (
     <div className="menu">
       {menuButtons.map((button) => (
-        <button key={button} className="menuButton">
+        <button
+          key={button}
+          className="menuButton"
+          onClick={() => router.push(`/${button}`)}
+        >
           {button}
         </button>
       ))}
