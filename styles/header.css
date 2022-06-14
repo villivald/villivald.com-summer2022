@@ -6,3 +6,8 @@ header {
   width: 100vw;
   background-color: hsl(151, 21%, 46%);
 }
+
+.siteLogo {
+  cursor: pointer;
+  border-radius: 50%;
+}

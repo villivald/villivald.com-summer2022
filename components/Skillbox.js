@@ -20,7 +20,7 @@ const Skillbox = () => {
   return (
     <div className="skillbox">
       <div>
-        <h3>Study</h3>
+        <h3>Studies</h3>
         <div className="studyContainer">
           <div>
             Bachelor of Engineering, Software engineering (2019 ~ 2023) -
