@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { FormattedMessage } from "react-intl";
 
 const Menu = () => {
   const router = useRouter();
@@ -12,7 +13,7 @@ const Menu = () => {
           className="menuButton"
           onClick={() => router.push(`/${button}`)}
         >
-          {button}
+          <FormattedMessage id={button} />
         </button>
       ))}
       <div>CMD + K</div>

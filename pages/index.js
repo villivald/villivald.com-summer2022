@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import Head from "next/head";
+
 import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Projects from "../components/Projects";
@@ -7,7 +9,20 @@ import Skillbox from "../components/Skillbox";
 import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
 
+import { useAppContext } from "../context/state";
+
 export default function Home({ blogData }) {
+  const [data, setData] = useAppContext();
+
+  useEffect(() => {
+    setData((data) => {
+      return {
+        ...data,
+        blogData,
+      };
+    });
+  }, []);
+
   return (
     <div>
       <Head>
@@ -25,7 +40,7 @@ export default function Home({ blogData }) {
         <Projects />
         <Timeline />
         <Skillbox />
-        <Blogs blogData={blogData} />
+        <Blogs blogData={data.blogData || []} />
       </main>
 
       <Footer />

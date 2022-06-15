@@ -1,3 +1,6 @@
+import { AppWrapper } from "../context/state";
+
+// reset
 import "../styles/globals.css";
 
 // components
@@ -18,7 +21,11 @@ import "../styles/pages/studies.css";
 import "../styles/pages/uses.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <AppWrapper>
+      <Component {...pageProps} />
+    </AppWrapper>
+  );
 }
 
 export default MyApp;

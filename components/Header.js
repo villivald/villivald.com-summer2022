@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { useAppContext } from "../context/state";
+import { FormattedMessage } from "react-intl";
+
 const Header = () => {
+  const [data, setData] = useAppContext();
+  const [lang, setLang] = useState("fi");
+
+  useEffect(() => {
+    setData((data) => {
+      return {
+        ...data,
+        lang,
+      };
+    });
+  }, [lang, setData]);
   return (
     <header>
       <Image src="/catLogo.webp" alt="cat pic" width={200} height={150} />
@@ -15,8 +29,12 @@ const Header = () => {
           className="siteLogo"
         />
       </Link>
-      <div>Dark/Light</div>
-      <button>FI</button>
+      <div>
+        <FormattedMessage id="someData" />
+      </div>
+      <button onClick={() => setLang(lang === "en" ? "fi" : "en")}>
+        {lang === "en" ? "🇺🇸" : "🇫🇮"}
+      </button>
     </header>
   );
 };
