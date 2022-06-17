@@ -9,7 +9,10 @@ export function AppWrapper(props) {
 
   return (
     <AppContext.Provider value={[data, setData]}>
-      <IntlProvider locale={data.lang} messages={translations[data.lang]}>
+      <IntlProvider
+        locale={data.lang || "en"}
+        messages={translations[data.lang || "en"]}
+      >
         {props.children}
       </IntlProvider>
     </AppContext.Provider>

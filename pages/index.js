@@ -21,7 +21,7 @@ export default function Home({ blogData }) {
         blogData,
       };
     });
-  }, []);
+  }, [blogData, setData]);
 
   return (
     <div>

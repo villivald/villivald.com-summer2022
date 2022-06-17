@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useAppContext } from "../context/state";
-import { FormattedMessage } from "react-intl";
 
 const Header = () => {
   const [data, setData] = useAppContext();
@@ -17,6 +16,7 @@ const Header = () => {
       };
     });
   }, [lang, setData]);
+
   return (
     <header>
       <Image src="/catLogo.webp" alt="cat pic" width={200} height={150} />
@@ -29,9 +29,7 @@ const Header = () => {
           className="siteLogo"
         />
       </Link>
-      <div>
-        <FormattedMessage id="someData" />
-      </div>
+      <div>Dark/Light</div>
       <button onClick={() => setLang(lang === "en" ? "fi" : "en")}>
         {lang === "en" ? "🇺🇸" : "🇫🇮"}
       </button>
