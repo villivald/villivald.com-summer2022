@@ -3,5 +3,15 @@
   "uses": "Toolbox",
   "books": "Kirjat",
   "studies": "Koulutus",
-  "about": "Info"
+  "about": "Info",
+  "skills": "Taidot",
+  "studies": "Koulutus",
+  "blogPosts": "Blog",
+  "contacts": "Ota yhteyttä",
+  "copyright": "Copyright",
+  "social": "Social",
+  "ects": " op",
+  "bachelor": "Insinööri, Tieto- ja viestintätekniikka ",
+  "master": "Filosofian maisteri, Venäjän kirjallisuus ",
+  "timeline": "Aikajana"
 }

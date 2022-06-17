@@ -3,5 +3,15 @@
   "uses": "Uses",
   "books": "Books",
   "studies": "Studies",
-  "about": "About"
+  "about": "About",
+  "skills": "Skills",
+  "studies": "Studies",
+  "blogPosts": "Blog Posts",
+  "contacts": "Contacts",
+  "copyright": "Copyright",
+  "social": "Social",
+  "ects": " ECTS",
+  "bachelor": "Bachelor of Engineering, Software engineering ",
+  "master": "Master of Arts, Russian literature ",
+  "timeline": "Timeline"
 }

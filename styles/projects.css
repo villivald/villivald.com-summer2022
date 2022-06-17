@@ -7,10 +7,14 @@
   background-color: hsl(151, 21%, 85%);
 }
 
+.currentProjects,
+.projectsContainer {
+  width: 90%;
+  height: 75%;
+}
+
 .currentProjects {
-  background-color: #397f8c;
-  width: 400px;
-  height: 225px;
+  background-color: hsl(189, 42%, 39%);
 }
 
 .projectsContainer {
@@ -22,28 +26,30 @@
 .projectSection {
   display: grid;
   gap: 1rem;
-  width: 300px;
-  height: 225px;
+  width: 90%;
+  height: 100%;
 }
 
-.projectSection div {
+.projectSection div:first-child {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 .projectSection div div {
-  width: 50%;
+  width: 9.3rem;
 }
 
 .projectSection div div:first-child {
-  background-color: aqua;
+  background-color: hsl(180, 100%, 50%);
+  border-radius: 50%;
 }
 
 .projectSection div div:nth-child(2) {
-  background-color: rgb(51, 255, 0);
+  background-color: hsl(108, 100%, 50%);
+  border-radius: 50%;
 }
 
 .projectsContainer > div > div:nth-child(2),
 .projectsContainer > div > div:nth-child(2) {
-  border: 1px solid black;
+  border: 1px solid hsl(0, 0%, 0%);
 }

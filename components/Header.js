@@ -6,7 +6,7 @@ import { useAppContext } from "../context/state";
 
 const Header = () => {
   const [data, setData] = useAppContext();
-  const [lang, setLang] = useState("fi");
+  const [lang, setLang] = useState(data.lang || "en");
 
   useEffect(() => {
     setData((data) => {
@@ -24,8 +24,8 @@ const Header = () => {
         <Image
           src="/siteLogo.webp"
           alt="logo of a website"
-          width={90}
-          height={90}
+          width={130}
+          height={130}
           className="siteLogo"
         />
       </Link>
