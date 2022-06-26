@@ -4,7 +4,8 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import About from "../components/pagesComponents/AboutPage";
 
-export default function AboutPage() {
+export default function AboutPage({ toggleTheme, selectedTheme }) {
+  console.log(selectedTheme);
   return (
     <div>
       <Head>
@@ -17,7 +18,7 @@ export default function AboutPage() {
       </Head>
 
       <main>
-        <Header />
+        <Header toggleTheme={toggleTheme} theme={selectedTheme} />
         <Menu />
         <About />
       </main>

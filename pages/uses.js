@@ -4,7 +4,7 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Uses from "../components/pagesComponents/UsesPage";
 
-export default function UsesPage() {
+export default function UsesPage({ toggleTheme, selectedTheme }) {
   return (
     <div>
       <Head>
@@ -17,7 +17,7 @@ export default function UsesPage() {
       </Head>
 
       <main>
-        <Header />
+        <Header toggleTheme={toggleTheme} theme={selectedTheme} />
         <Menu />
         <Uses />
       </main>

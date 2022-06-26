@@ -4,7 +4,7 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Projects from "../components/pagesComponents/ProjectsPage";
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ toggleTheme, selectedTheme }) {
   return (
     <div>
       <Head>
@@ -17,7 +17,7 @@ export default function ProjectsPage() {
       </Head>
 
       <main>
-        <Header />
+        <Header toggleTheme={toggleTheme} theme={selectedTheme} />
         <Menu />
         <Projects />
       </main>

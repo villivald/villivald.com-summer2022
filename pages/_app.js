@@ -20,11 +20,48 @@ import "../styles/pages/projects.css";
 import "../styles/pages/studies.css";
 import "../styles/pages/uses.css";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useEffect, useState } from "react";
+
+const lightTheme = createTheme({
+  palette: {
+    mode: "light",
+  },
+});
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+});
+
+function getActiveTheme(themeMode) {
+  return themeMode === "light" ? lightTheme : darkTheme;
+}
+
 function MyApp({ Component, pageProps }) {
+  const [activeTheme, setActiveTheme] = useState(lightTheme);
+  const [selectedTheme, setSelectedTheme] = useState("light");
+
+  const toggleTheme = () => {
+    const desiredTheme = selectedTheme === "light" ? "dark" : "light";
+    setSelectedTheme(desiredTheme);
+  };
+
+  useEffect(() => {
+    setActiveTheme(getActiveTheme(selectedTheme));
+  }, [selectedTheme]);
   return (
-    <AppWrapper>
-      <Component {...pageProps} />
-    </AppWrapper>
+    <ThemeProvider theme={activeTheme}>
+      <AppWrapper>
+        <Component
+          {...pageProps}
+          toggleTheme={toggleTheme}
+          selectedTheme={selectedTheme}
+          lightTheme={lightTheme}
+        />
+      </AppWrapper>
+    </ThemeProvider>
   );
 }
 

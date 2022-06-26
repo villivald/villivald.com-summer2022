@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Switch from "@mui/material/Switch";
 
 import { useAppContext } from "../context/state";
 
-const Header = () => {
+const Header = ({ toggleTheme, theme }) => {
   const [data, setData] = useAppContext();
   const [lang, setLang] = useState(data.lang || "en");
 
@@ -18,7 +19,7 @@ const Header = () => {
   }, [lang, setData]);
 
   return (
-    <header>
+    <header style={{ backgroundColor: theme === "dark" ? "black" : "" }}>
       <Image src="/catLogo.webp" alt="cat pic" width={200} height={150} />
       <Link href="/">
         <Image
@@ -29,7 +30,7 @@ const Header = () => {
           className="siteLogo"
         />
       </Link>
-      <div>Dark/Light</div>
+      <Switch checked={theme === "dark"} onChange={toggleTheme} />
       <button onClick={() => setLang(lang === "en" ? "fi" : "en")}>
         {lang === "en" ? "🇺🇸" : "🇫🇮"}
       </button>

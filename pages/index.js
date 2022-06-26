@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 import { useAppContext } from "../context/state";
 
-export default function Home({ blogData }) {
+export default function Home({ blogData, toggleTheme, selectedTheme }) {
   const [data, setData] = useAppContext();
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function Home({ blogData }) {
       </Head>
 
       <main className="main">
-        <Header />
+        <Header toggleTheme={toggleTheme} theme={selectedTheme} />
         <Menu />
         <Projects />
         <Timeline />
