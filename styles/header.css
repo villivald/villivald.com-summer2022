@@ -2,7 +2,7 @@ header {
   display: grid;
   place-items: center;
   grid-template-columns: 2fr 3fr 1fr 1fr;
-  height: 15vh;
+  height: 15%;
   width: 100vw;
   background-color: hsl(151, 21%, 46%);
 }
@@ -20,4 +20,9 @@ header {
 
 header > span:nth-child(2) {
   overflow: initial !important;
+}
+
+.themeSwitcher {
+  display: flex;
+  align-items: center;
 }

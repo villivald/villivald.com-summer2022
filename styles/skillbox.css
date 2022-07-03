@@ -5,6 +5,7 @@
   height: 40vh;
   width: 100vw;
   background-color: hsl(17, 23%, 94%);
+  padding: 1%;
 }
 
 .skillbox > div > h3 {

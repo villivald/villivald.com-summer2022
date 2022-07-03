@@ -4,13 +4,22 @@
   grid-template-columns: repeat(6, 1fr);
   height: 15vh;
   width: 100vw;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(194, 47%, 48%);
 }
 
 .menuButton {
   width: 150px;
   height: 50px;
   cursor: pointer;
+  background-color: crimson;
+  box-shadow: 4px 4px #002855;
+}
+
+.menuButton:hover {
+  transform: translateY(2px);
+  background-color: #002855;
+  box-shadow: 4px 4px crimson;
+  color: white;
 }
 
 .menuButton::first-letter {

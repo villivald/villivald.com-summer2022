@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
-import SingleBlog from "./subComponents/singleBlog";
+import SingleBlog from "./subComponents/SingleBlog";
 
 const Blogs = ({ blogData }) => {
   return (
